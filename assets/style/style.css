@@ -1,0 +1,73 @@
+:root{
+    --primary-bg: hsl(212, 45%, 89%);
+    --card-bg: hsl(0, 0%, 100%);
+    --shadow-clr: hsla(216, 15%, 48%, 0.5);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-family: "Outfit", serif;
+    font-size: 1rem;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: var(--primary-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+img{
+    display: inline;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-size: inherit;
+}
+
+.qr-card{
+    background-color: var(--card-bg);
+    border-radius: 0.75em;
+    max-width: 30ch;
+    height: fit-content;
+    padding: 1em 1em 2em 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin: auto;
+    transition: .3s;
+}
+
+.qr-card:hover {
+    box-shadow: var(--shadow-clr) 0 0.2em 0.25rem;
+    scale: 1.1;
+    transition: .6s;
+}
+
+.qr-card img{
+    max-width: 100%;
+    border-radius: 0.5em;
+}
+
+.qr-card h2{
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+    max-width: 18ch;
+    font-size: 1.15rem;
+    margin: 0;
+}
+
+.qr-card p{
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(216, 15%, 48%);
+    margin: 0;
+}
+
+footer.attribution{
+    font-size: 1rem;
+    padding-bottom: 5px;
+}
